@@ -1,4 +1,0 @@
-(sym_lib_table
-  (version 7)
-  (lib (name "MP2315")(type "KiCad")(uri "${KIPRJMOD}/lib/symbols/2023-03-05_06-51-21.kicad_sym")(options "")(descr ""))
-)

@@ -1,4 +1,0 @@
-(fp_lib_table
-  (version 7)
-  (lib (name "基于STM32的仓库环境无线监测系统")(type "KiCad")(uri "${KIPRJMOD}/lib/footprints.pretty")(options "")(descr ""))
-)
