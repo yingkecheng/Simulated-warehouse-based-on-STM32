@@ -716,7 +716,7 @@
     (property "Value" "Conn_01x02" (at 90.17 125.095 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "Connector_JST:JST_XH_B1B-XH-AM_1x01_P2.50mm_Vertical" (at 87.63 121.92 0)
+    (property "Footprint" "Connector_JST:JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical" (at 87.63 121.92 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 87.63 121.92 0)
@@ -736,7 +736,7 @@
   (symbol (lib_id "power:GND") (at 107.95 38.1 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 04e8e549-4c45-4a5d-954c-3eb072fa48c6)
-    (property "Reference" "#PWR050" (at 107.95 44.45 0)
+    (property "Reference" "#PWR047" (at 107.95 44.45 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 107.95 43.18 0)
@@ -752,7 +752,7 @@
     (instances
       (project "Warehouse-on-STM32"
         (path "/2599b9a9-6312-402b-9c24-1e87744a4c70/99bb5e8e-3124-4586-a004-2ab84cf92f19"
-          (reference "#PWR050") (unit 1)
+          (reference "#PWR047") (unit 1)
         )
       )
     )
@@ -761,7 +761,7 @@
   (symbol (lib_id "power:GND") (at 107.95 120.65 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 0991f5ef-d4a0-413e-8957-4e75bafa30f1)
-    (property "Reference" "#PWR052" (at 107.95 127 0)
+    (property "Reference" "#PWR049" (at 107.95 127 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 107.95 125.73 0)
@@ -777,7 +777,7 @@
     (instances
       (project "Warehouse-on-STM32"
         (path "/2599b9a9-6312-402b-9c24-1e87744a4c70/99bb5e8e-3124-4586-a004-2ab84cf92f19"
-          (reference "#PWR052") (unit 1)
+          (reference "#PWR049") (unit 1)
         )
       )
     )
@@ -819,7 +819,7 @@
   (symbol (lib_id "power:GND") (at 107.95 80.01 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 189e6122-cc86-47a6-8ab7-61c8e0407a17)
-    (property "Reference" "#PWR051" (at 107.95 86.36 0)
+    (property "Reference" "#PWR048" (at 107.95 86.36 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 107.95 85.09 0)
@@ -835,7 +835,7 @@
     (instances
       (project "Warehouse-on-STM32"
         (path "/2599b9a9-6312-402b-9c24-1e87744a4c70/99bb5e8e-3124-4586-a004-2ab84cf92f19"
-          (reference "#PWR051") (unit 1)
+          (reference "#PWR048") (unit 1)
         )
       )
     )
@@ -850,7 +850,7 @@
     (property "Value" "Conn_01x02" (at 90.17 42.545 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "Connector_JST:JST_XH_B1B-XH-AM_1x01_P2.50mm_Vertical" (at 87.63 39.37 0)
+    (property "Footprint" "Connector_JST:JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical" (at 87.63 39.37 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 87.63 39.37 0)
@@ -890,7 +890,7 @@
           (reference "C5") (unit 1)
         )
         (path "/2599b9a9-6312-402b-9c24-1e87744a4c70/99bb5e8e-3124-4586-a004-2ab84cf92f19"
-          (reference "C29") (unit 1)
+          (reference "C28") (unit 1)
         )
       )
     )
@@ -899,7 +899,7 @@
   (symbol (lib_id "power:GND") (at 69.85 54.61 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 3ef0ea79-4787-4408-a682-06afc2e70d9f)
-    (property "Reference" "#PWR045" (at 69.85 60.96 0)
+    (property "Reference" "#PWR042" (at 69.85 60.96 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 69.85 59.69 0)
@@ -915,7 +915,7 @@
     (instances
       (project "Warehouse-on-STM32"
         (path "/2599b9a9-6312-402b-9c24-1e87744a4c70/99bb5e8e-3124-4586-a004-2ab84cf92f19"
-          (reference "#PWR045") (unit 1)
+          (reference "#PWR042") (unit 1)
         )
       )
     )
@@ -924,7 +924,7 @@
   (symbol (lib_id "power:+12V") (at 69.85 67.31 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 4bec1725-1814-4aae-803d-3f33f3f2dd7e)
-    (property "Reference" "#PWR046" (at 69.85 71.12 0)
+    (property "Reference" "#PWR043" (at 69.85 71.12 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+12V" (at 69.85 63.5 0)
@@ -940,7 +940,7 @@
     (instances
       (project "Warehouse-on-STM32"
         (path "/2599b9a9-6312-402b-9c24-1e87744a4c70/99bb5e8e-3124-4586-a004-2ab84cf92f19"
-          (reference "#PWR046") (unit 1)
+          (reference "#PWR043") (unit 1)
         )
       )
     )
@@ -969,7 +969,7 @@
           (reference "C17") (unit 1)
         )
         (path "/2599b9a9-6312-402b-9c24-1e87744a4c70/99bb5e8e-3124-4586-a004-2ab84cf92f19"
-          (reference "C26") (unit 1)
+          (reference "C25") (unit 1)
         )
       )
     )
@@ -1030,7 +1030,7 @@
           (reference "#PWR01") (unit 1)
         )
         (path "/2599b9a9-6312-402b-9c24-1e87744a4c70/99bb5e8e-3124-4586-a004-2ab84cf92f19"
-          (reference "#PWR043") (unit 1)
+          (reference "#PWR040") (unit 1)
         )
       )
     )
@@ -1059,7 +1059,7 @@
           (reference "C17") (unit 1)
         )
         (path "/2599b9a9-6312-402b-9c24-1e87744a4c70/99bb5e8e-3124-4586-a004-2ab84cf92f19"
-          (reference "C27") (unit 1)
+          (reference "C26") (unit 1)
         )
       )
     )
@@ -1088,7 +1088,7 @@
           (reference "C5") (unit 1)
         )
         (path "/2599b9a9-6312-402b-9c24-1e87744a4c70/99bb5e8e-3124-4586-a004-2ab84cf92f19"
-          (reference "C28") (unit 1)
+          (reference "C27") (unit 1)
         )
       )
     )
@@ -1116,7 +1116,7 @@
           (reference "#PWR01") (unit 1)
         )
         (path "/2599b9a9-6312-402b-9c24-1e87744a4c70/99bb5e8e-3124-4586-a004-2ab84cf92f19"
-          (reference "#PWR042") (unit 1)
+          (reference "#PWR039") (unit 1)
         )
       )
     )
@@ -1145,7 +1145,7 @@
           (reference "C17") (unit 1)
         )
         (path "/2599b9a9-6312-402b-9c24-1e87744a4c70/99bb5e8e-3124-4586-a004-2ab84cf92f19"
-          (reference "C25") (unit 1)
+          (reference "C24") (unit 1)
         )
       )
     )
@@ -1174,7 +1174,7 @@
           (reference "C5") (unit 1)
         )
         (path "/2599b9a9-6312-402b-9c24-1e87744a4c70/99bb5e8e-3124-4586-a004-2ab84cf92f19"
-          (reference "C30") (unit 1)
+          (reference "C29") (unit 1)
         )
       )
     )
@@ -1183,7 +1183,7 @@
   (symbol (lib_id "power:+12V") (at 69.85 25.4 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid b134e8cf-6703-48a3-bf80-43197540effa)
-    (property "Reference" "#PWR044" (at 69.85 29.21 0)
+    (property "Reference" "#PWR041" (at 69.85 29.21 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+12V" (at 69.85 21.59 0)
@@ -1199,7 +1199,7 @@
     (instances
       (project "Warehouse-on-STM32"
         (path "/2599b9a9-6312-402b-9c24-1e87744a4c70/99bb5e8e-3124-4586-a004-2ab84cf92f19"
-          (reference "#PWR044") (unit 1)
+          (reference "#PWR041") (unit 1)
         )
       )
     )
@@ -1208,7 +1208,7 @@
   (symbol (lib_id "power:GND") (at 69.85 96.52 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid bf484f4d-880f-448d-a8ea-70f6189ea500)
-    (property "Reference" "#PWR047" (at 69.85 102.87 0)
+    (property "Reference" "#PWR044" (at 69.85 102.87 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 69.85 101.6 0)
@@ -1224,7 +1224,7 @@
     (instances
       (project "Warehouse-on-STM32"
         (path "/2599b9a9-6312-402b-9c24-1e87744a4c70/99bb5e8e-3124-4586-a004-2ab84cf92f19"
-          (reference "#PWR047") (unit 1)
+          (reference "#PWR044") (unit 1)
         )
       )
     )
@@ -1252,7 +1252,7 @@
           (reference "#PWR01") (unit 1)
         )
         (path "/2599b9a9-6312-402b-9c24-1e87744a4c70/99bb5e8e-3124-4586-a004-2ab84cf92f19"
-          (reference "#PWR041") (unit 1)
+          (reference "#PWR038") (unit 1)
         )
       )
     )
@@ -1261,7 +1261,7 @@
   (symbol (lib_id "power:GND") (at 69.85 137.16 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid c77b0624-5f6c-449b-bbca-9d5069ce81c2)
-    (property "Reference" "#PWR049" (at 69.85 143.51 0)
+    (property "Reference" "#PWR046" (at 69.85 143.51 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 69.85 142.24 0)
@@ -1277,7 +1277,7 @@
     (instances
       (project "Warehouse-on-STM32"
         (path "/2599b9a9-6312-402b-9c24-1e87744a4c70/99bb5e8e-3124-4586-a004-2ab84cf92f19"
-          (reference "#PWR049") (unit 1)
+          (reference "#PWR046") (unit 1)
         )
       )
     )
@@ -1292,7 +1292,7 @@
     (property "Value" "Conn_01x02" (at 90.17 84.455 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "Connector_JST:JST_XH_B1B-XH-AM_1x01_P2.50mm_Vertical" (at 87.63 81.28 0)
+    (property "Footprint" "Connector_JST:JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical" (at 87.63 81.28 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 87.63 81.28 0)
@@ -1345,7 +1345,7 @@
   (symbol (lib_id "power:+12V") (at 69.85 107.95 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid fc82b356-1c4f-4668-aca4-60d370639ab8)
-    (property "Reference" "#PWR048" (at 69.85 111.76 0)
+    (property "Reference" "#PWR045" (at 69.85 111.76 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+12V" (at 69.85 104.14 0)
@@ -1361,7 +1361,7 @@
     (instances
       (project "Warehouse-on-STM32"
         (path "/2599b9a9-6312-402b-9c24-1e87744a4c70/99bb5e8e-3124-4586-a004-2ab84cf92f19"
-          (reference "#PWR048") (unit 1)
+          (reference "#PWR045") (unit 1)
         )
       )
     )

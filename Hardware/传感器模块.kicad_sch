@@ -895,7 +895,7 @@
           (reference "R2") (unit 1)
         )
         (path "/2599b9a9-6312-402b-9c24-1e87744a4c70/43eb1204-8bf3-4d5b-873c-7d8df09b6f9d"
-          (reference "R13") (unit 1)
+          (reference "R9") (unit 1)
         )
       )
     )
@@ -924,7 +924,7 @@
           (reference "R2") (unit 1)
         )
         (path "/2599b9a9-6312-402b-9c24-1e87744a4c70/43eb1204-8bf3-4d5b-873c-7d8df09b6f9d"
-          (reference "R14") (unit 1)
+          (reference "R10") (unit 1)
         )
       )
     )
@@ -952,7 +952,7 @@
           (reference "#PWR04") (unit 1)
         )
         (path "/2599b9a9-6312-402b-9c24-1e87744a4c70/43eb1204-8bf3-4d5b-873c-7d8df09b6f9d"
-          (reference "#PWR063") (unit 1)
+          (reference "#PWR060") (unit 1)
         )
       )
     )
@@ -980,7 +980,7 @@
           (reference "#PWR04") (unit 1)
         )
         (path "/2599b9a9-6312-402b-9c24-1e87744a4c70/43eb1204-8bf3-4d5b-873c-7d8df09b6f9d"
-          (reference "#PWR065") (unit 1)
+          (reference "#PWR062") (unit 1)
         )
       )
     )
@@ -1009,7 +1009,7 @@
           (reference "R2") (unit 1)
         )
         (path "/2599b9a9-6312-402b-9c24-1e87744a4c70/43eb1204-8bf3-4d5b-873c-7d8df09b6f9d"
-          (reference "R15") (unit 1)
+          (reference "R11") (unit 1)
         )
       )
     )
@@ -1046,7 +1046,7 @@
   (symbol (lib_id "power:+1V8") (at 91.44 106.68 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 4c012f23-5675-4f18-bbbb-e719ee448a41)
-    (property "Reference" "#PWR055" (at 91.44 110.49 0)
+    (property "Reference" "#PWR052" (at 91.44 110.49 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+1V8" (at 91.44 102.87 0)
@@ -1062,7 +1062,7 @@
     (instances
       (project "Warehouse-on-STM32"
         (path "/2599b9a9-6312-402b-9c24-1e87744a4c70/43eb1204-8bf3-4d5b-873c-7d8df09b6f9d"
-          (reference "#PWR055") (unit 1)
+          (reference "#PWR052") (unit 1)
         )
       )
     )
@@ -1090,7 +1090,7 @@
           (reference "#PWR04") (unit 1)
         )
         (path "/2599b9a9-6312-402b-9c24-1e87744a4c70/43eb1204-8bf3-4d5b-873c-7d8df09b6f9d"
-          (reference "#PWR059") (unit 1)
+          (reference "#PWR056") (unit 1)
         )
       )
     )
@@ -1146,7 +1146,7 @@
           (reference "C1") (unit 1)
         )
         (path "/2599b9a9-6312-402b-9c24-1e87744a4c70/43eb1204-8bf3-4d5b-873c-7d8df09b6f9d"
-          (reference "C31") (unit 1)
+          (reference "C30") (unit 1)
         )
       )
     )
@@ -1175,7 +1175,7 @@
           (reference "R2") (unit 1)
         )
         (path "/2599b9a9-6312-402b-9c24-1e87744a4c70/43eb1204-8bf3-4d5b-873c-7d8df09b6f9d"
-          (reference "R16") (unit 1)
+          (reference "R12") (unit 1)
         )
       )
     )
@@ -1184,7 +1184,7 @@
   (symbol (lib_id "power:+1V8") (at 91.44 82.55 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 69311c39-5642-47e9-bc50-58e11de98f64)
-    (property "Reference" "#PWR054" (at 91.44 86.36 0)
+    (property "Reference" "#PWR051" (at 91.44 86.36 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+1V8" (at 91.44 78.74 0)
@@ -1200,7 +1200,7 @@
     (instances
       (project "Warehouse-on-STM32"
         (path "/2599b9a9-6312-402b-9c24-1e87744a4c70/43eb1204-8bf3-4d5b-873c-7d8df09b6f9d"
-          (reference "#PWR054") (unit 1)
+          (reference "#PWR051") (unit 1)
         )
       )
     )
@@ -1228,7 +1228,7 @@
           (reference "#PWR04") (unit 1)
         )
         (path "/2599b9a9-6312-402b-9c24-1e87744a4c70/43eb1204-8bf3-4d5b-873c-7d8df09b6f9d"
-          (reference "#PWR056") (unit 1)
+          (reference "#PWR053") (unit 1)
         )
       )
     )
@@ -1257,7 +1257,7 @@
           (reference "R2") (unit 1)
         )
         (path "/2599b9a9-6312-402b-9c24-1e87744a4c70/43eb1204-8bf3-4d5b-873c-7d8df09b6f9d"
-          (reference "R17") (unit 1)
+          (reference "R13") (unit 1)
         )
       )
     )
@@ -1266,7 +1266,7 @@
   (symbol (lib_id "power:+1V8") (at 168.91 49.53 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 9400acbd-276b-4a0a-8a1c-df4bf310f7df)
-    (property "Reference" "#PWR058" (at 168.91 53.34 0)
+    (property "Reference" "#PWR055" (at 168.91 53.34 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+1V8" (at 168.91 45.72 0)
@@ -1282,7 +1282,7 @@
     (instances
       (project "Warehouse-on-STM32"
         (path "/2599b9a9-6312-402b-9c24-1e87744a4c70/43eb1204-8bf3-4d5b-873c-7d8df09b6f9d"
-          (reference "#PWR058") (unit 1)
+          (reference "#PWR055") (unit 1)
         )
       )
     )
@@ -1310,7 +1310,7 @@
           (reference "#PWR04") (unit 1)
         )
         (path "/2599b9a9-6312-402b-9c24-1e87744a4c70/43eb1204-8bf3-4d5b-873c-7d8df09b6f9d"
-          (reference "#PWR060") (unit 1)
+          (reference "#PWR057") (unit 1)
         )
       )
     )
@@ -1338,7 +1338,7 @@
           (reference "#PWR05") (unit 1)
         )
         (path "/2599b9a9-6312-402b-9c24-1e87744a4c70/43eb1204-8bf3-4d5b-873c-7d8df09b6f9d"
-          (reference "#PWR064") (unit 1)
+          (reference "#PWR061") (unit 1)
         )
       )
     )
@@ -1366,7 +1366,7 @@
           (reference "#PWR04") (unit 1)
         )
         (path "/2599b9a9-6312-402b-9c24-1e87744a4c70/43eb1204-8bf3-4d5b-873c-7d8df09b6f9d"
-          (reference "#PWR062") (unit 1)
+          (reference "#PWR059") (unit 1)
         )
       )
     )
@@ -1394,7 +1394,7 @@
           (reference "#PWR05") (unit 1)
         )
         (path "/2599b9a9-6312-402b-9c24-1e87744a4c70/43eb1204-8bf3-4d5b-873c-7d8df09b6f9d"
-          (reference "#PWR057") (unit 1)
+          (reference "#PWR054") (unit 1)
         )
       )
     )
@@ -1452,7 +1452,7 @@
           (reference "#PWR05") (unit 1)
         )
         (path "/2599b9a9-6312-402b-9c24-1e87744a4c70/43eb1204-8bf3-4d5b-873c-7d8df09b6f9d"
-          (reference "#PWR053") (unit 1)
+          (reference "#PWR050") (unit 1)
         )
       )
     )
@@ -1519,7 +1519,7 @@
   (symbol (lib_id "power:+2V5") (at 184.15 102.87 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid fa2dd949-0cd6-49cb-ace2-a9a08bf980cd)
-    (property "Reference" "#PWR061" (at 184.15 106.68 0)
+    (property "Reference" "#PWR058" (at 184.15 106.68 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+2V5" (at 184.15 99.06 0)
@@ -1535,7 +1535,7 @@
     (instances
       (project "Warehouse-on-STM32"
         (path "/2599b9a9-6312-402b-9c24-1e87744a4c70/43eb1204-8bf3-4d5b-873c-7d8df09b6f9d"
-          (reference "#PWR061") (unit 1)
+          (reference "#PWR058") (unit 1)
         )
       )
     )
@@ -1544,7 +1544,7 @@
   (symbol (lib_id "power:+1V8") (at 214.63 48.26 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid ffb06b06-030a-4a16-b90b-0892b6e94a69)
-    (property "Reference" "#PWR066" (at 214.63 52.07 0)
+    (property "Reference" "#PWR063" (at 214.63 52.07 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+1V8" (at 214.63 44.45 0)
@@ -1560,7 +1560,7 @@
     (instances
       (project "Warehouse-on-STM32"
         (path "/2599b9a9-6312-402b-9c24-1e87744a4c70/43eb1204-8bf3-4d5b-873c-7d8df09b6f9d"
-          (reference "#PWR066") (unit 1)
+          (reference "#PWR063") (unit 1)
         )
       )
     )
