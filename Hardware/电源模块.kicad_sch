@@ -3093,7 +3093,7 @@
     (property "Value" "Barrel_Jack_Switch" (at 135.89 38.1 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Footprint" "Connector_BarrelJack:BarrelJack_CLIFF_FC681465S_SMT_Horizontal" (at 137.16 44.196 0)
+    (property "Footprint" "Connector_BarrelJack:BarrelJack_XKB_DC-044A-2.5A-2.5" (at 137.16 44.196 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 137.16 44.196 0)
