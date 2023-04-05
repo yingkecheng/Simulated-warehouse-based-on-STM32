@@ -45,7 +45,7 @@
         "silk_text_thickness": 0.15,
         "silk_text_upright": false,
         "zones": {
-          "min_clearance": 0.5
+          "min_clearance": 0.19999999999999998
         }
       },
       "diff_pair_dimensions": [
@@ -390,7 +390,7 @@
       "no_connect_dangling": "warning",
       "pin_not_connected": "error",
       "pin_not_driven": "error",
-      "pin_to_pin": "warning",
+      "pin_to_pin": "error",
       "power_pin_not_driven": "error",
       "similar_labels": "warning",
       "simulation_model_issue": "error",
@@ -453,7 +453,71 @@
     "netclass_patterns": [
       {
         "netclass": "PWR",
-        "pattern": "3V3"
+        "pattern": "GND"
+      },
+      {
+        "netclass": "PWR",
+        "pattern": "Net-(J3-Pad1)"
+      },
+      {
+        "netclass": "PWR",
+        "pattern": "+12V"
+      },
+      {
+        "netclass": "PWR",
+        "pattern": "+5V"
+      },
+      {
+        "netclass": "PWR",
+        "pattern": "+3V3"
+      },
+      {
+        "netclass": "PWR",
+        "pattern": "+2V5"
+      },
+      {
+        "netclass": "PWR",
+        "pattern": "+1V8"
+      },
+      {
+        "netclass": "PWR",
+        "pattern": "Net-(J4-Pin_2)"
+      },
+      {
+        "netclass": "PWR",
+        "pattern": "Net-(J4-Pin_1)"
+      },
+      {
+        "netclass": "PWR",
+        "pattern": "Net-(J5-Pin_1)"
+      },
+      {
+        "netclass": "PWR",
+        "pattern": "Net-(J5-Pin_2)"
+      },
+      {
+        "netclass": "PWR",
+        "pattern": "Net-(J6-Pin_1)"
+      },
+      {
+        "netclass": "PWR",
+        "pattern": "Net-(J6-Pin_2)"
+      },
+      {
+        "netclass": "PWR",
+        "pattern": "Net-(U2-LX1)"
+      },
+      {
+        "netclass": "PWR",
+        "pattern": "Net-(U2-LX2)"
+      },
+      {
+        "netclass": "PWR",
+        "pattern": "Net-(U2-LX3)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(U3-SW)"
       }
     ]
   },

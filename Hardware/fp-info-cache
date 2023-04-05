@@ -1,4 +1,4 @@
-21459918308071015
+21515198994325556
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -1560,6 +1560,13 @@ switch tactile SPST 1P1T straight NO SMTR C&K
 0
 2
 2
+Button_Switch_SMD
+SW_XKB_TS-1185-B-A-B-A
+
+
+0
+2
+2
 Button_Switch_THT
 KSA_Tactile_SPST
 KSA http://www.ckswitches.com/media/1457/ksa_ksl.pdf
@@ -2239,6 +2246,13 @@ SW PUSH SMALL Tactile C&K
 0
 4
 2
+Button_Switch_THT
+SW_XKB_SS-12D10L5
+
+
+0
+3
+3
 Buzzer_Beeper
 Buzzer_12x9.5RM7.6
 Generic Buzzer, D12mm height 9.5mm with RM7.6mm
@@ -8040,8 +8054,8 @@ BarrelJack_XKB_DC-044A-2.5A-2.5
 
 
 0
-0
-0
+5
+4
 Connector_Card
 CF-Card_3M_N7E50-A516xx-30
 Compact Flash Card connector, polarization inverse (https://multimedia.3m.com/mws/media/22424O/3mtm-cf-card-header-type-i-low-profile-surface-mount-ts0747.pdf)
@@ -62964,27 +62978,6 @@ Mounting 4.5mm 9774100982
 0
 8
 1
-My_Sensor
-AHT20
-
-
-0
-6
-6
-My_Sensor
-MEMS气体传感器
-
-
-0
-4
-4
-My_Sensor
-SGP30
-
-
-0
-7
-7
 NetTie
 NetTie-2_SMD_Pad0.5mm
 Net tie, 2 pin, 0.5mm square SMD pads
@@ -82467,6 +82460,13 @@ rotary encoder
 7
 6
 Sensor
+AHT20
+
+
+0
+6
+6
+Sensor
 Aosong_DHT11_5.5x12.0_P2.54mm
 Temperature and humidity module, http://akizukidenshi.com/download/ds/aosong/DHT11.pdf
 Temperature and humidity module
@@ -82488,12 +82488,26 @@ SST LuminOX O2
 4
 4
 Sensor
+MEMS气体传感器
+
+
+0
+4
+4
+Sensor
 MQ-6
 Gas Sensor, 6 pin, https://www.winsen-sensor.com/d/files/semiconductor/mq-6.pdf
 gas sensor
 0
 6
 6
+Sensor
+SGP30
+
+
+0
+7
+7
 Sensor
 SHT1x
 SHT1x
@@ -83019,13 +83033,6 @@ https://www.farnell.com/cad/316865.pdf?_ga=2.37208032.177107060.1530611323-24901
 0
 48
 48
-Switching_Devices
-Self_Locking_Switch_5.8_5.8
-
-
-0
-6
-6
 Symbol
 CE-Logo_8.5x6mm_SilkScreen
 CE marking
