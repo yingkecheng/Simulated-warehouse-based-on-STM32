@@ -2,7 +2,7 @@
 <export version="E">
   <design>
     <source>D:\Projects\Warehouse-on-STM32\Hardware\Warehouse-on-STM32.kicad_sch</source>
-    <date>2023/4/6 10:53:26</date>
+    <date>2023/4/7 10:38:59</date>
     <tool>Eeschema (7.0.0)</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
@@ -1557,13 +1557,13 @@
     <net code="21" name="/SCL">
       <node ref="Q1" pin="3" pinfunction="D" pintype="passive"/>
       <node ref="R16" pin="2" pintype="passive"/>
-      <node ref="U1" pin="42" pinfunction="PB6" pintype="bidirectional"/>
+      <node ref="U1" pin="21" pinfunction="PB10" pintype="bidirectional"/>
       <node ref="U7" pin="3" pinfunction="SCL" pintype="bidirectional"/>
     </net>
     <net code="22" name="/SDA">
       <node ref="Q2" pin="3" pinfunction="D" pintype="passive"/>
       <node ref="R17" pin="2" pintype="passive"/>
-      <node ref="U1" pin="43" pinfunction="PB7" pintype="bidirectional"/>
+      <node ref="U1" pin="22" pinfunction="PB11" pintype="bidirectional"/>
       <node ref="U7" pin="4" pinfunction="SDA" pintype="bidirectional"/>
     </net>
     <net code="23" name="/SWCLK">
@@ -1803,17 +1803,17 @@
     <net code="63" name="unconnected-(U1-PB1-Pad19)">
       <node ref="U1" pin="19" pinfunction="PB1" pintype="bidirectional+no_connect"/>
     </net>
-    <net code="64" name="unconnected-(U1-PB8-Pad45)">
+    <net code="64" name="unconnected-(U1-PB6-Pad42)">
+      <node ref="U1" pin="42" pinfunction="PB6" pintype="bidirectional"/>
+    </net>
+    <net code="65" name="unconnected-(U1-PB7-Pad43)">
+      <node ref="U1" pin="43" pinfunction="PB7" pintype="bidirectional"/>
+    </net>
+    <net code="66" name="unconnected-(U1-PB8-Pad45)">
       <node ref="U1" pin="45" pinfunction="PB8" pintype="bidirectional+no_connect"/>
     </net>
-    <net code="65" name="unconnected-(U1-PB9-Pad46)">
+    <net code="67" name="unconnected-(U1-PB9-Pad46)">
       <node ref="U1" pin="46" pinfunction="PB9" pintype="bidirectional+no_connect"/>
-    </net>
-    <net code="66" name="unconnected-(U1-PB10-Pad21)">
-      <node ref="U1" pin="21" pinfunction="PB10" pintype="bidirectional+no_connect"/>
-    </net>
-    <net code="67" name="unconnected-(U1-PB11-Pad22)">
-      <node ref="U1" pin="22" pinfunction="PB11" pintype="bidirectional+no_connect"/>
     </net>
     <net code="68" name="unconnected-(U1-PB12-Pad25)">
       <node ref="U1" pin="25" pinfunction="PB12" pintype="bidirectional+no_connect"/>
