@@ -1,0 +1,13 @@
+firmware\heap_4.o: ../Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c
+firmware\heap_4.o: D:\Dev_Tools\Keil_v5_MDK\ARM\ARM_Compiler_5.06u7\Bin\..\include\stdlib.h
+firmware\heap_4.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h
+firmware\heap_4.o: D:\Dev_Tools\Keil_v5_MDK\ARM\ARM_Compiler_5.06u7\Bin\..\include\stddef.h
+firmware\heap_4.o: D:\Dev_Tools\Keil_v5_MDK\ARM\ARM_Compiler_5.06u7\Bin\..\include\stdint.h
+firmware\heap_4.o: ../Core/Inc/FreeRTOSConfig.h
+firmware\heap_4.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h
+firmware\heap_4.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h
+firmware\heap_4.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h
+firmware\heap_4.o: ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3/portmacro.h
+firmware\heap_4.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrappers.h
+firmware\heap_4.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/task.h
+firmware\heap_4.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/list.h

@@ -969,7 +969,6 @@
     )
   )
 
-
   (junction (at 226.06 109.22) (diameter 0) (color 0 0 0 0)
     (uuid 0fc4d266-e0d5-465a-8704-c550cd0684c3)
   )
@@ -2273,7 +2272,7 @@
     (property "Value" "SWD" (at 217.17 129.54 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "Connector_Molex:Molex_PicoBlade_53047-0210_1x02_P1.25mm_Vertical" (at 214.63 128.27 0)
+    (property "Footprint" "Connector_Yource:1.25-5A" (at 214.63 128.27 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 214.63 128.27 0)
@@ -2774,7 +2773,7 @@
     (property "Value" "UART" (at 217.17 142.875 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "Connector_Molex:Molex_PicoBlade_53047-0210_1x02_P1.25mm_Vertical" (at 214.63 140.97 0)
+    (property "Footprint" "Connector_Yource:1.25-3A" (at 214.63 140.97 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 214.63 140.97 0)

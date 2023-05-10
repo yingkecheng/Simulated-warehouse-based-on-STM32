@@ -1,4 +1,4 @@
-21515198994325556
+21470046815244765
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -49427,6 +49427,13 @@ MesurementPoint Square SMDPad 5mmx10mm
 1
 1
 Connector_Wuerth
+1.25-3AT
+
+
+0
+0
+0
+Connector_Wuerth
 Wuerth_WR-WTB_64800211622_1x02_P1.50mm_Vertical
 Wuerth WR-WTB series connector, 64800211622 (https://katalog.we-online.com/em/datasheet/6480xx11622.pdf), generated with kicad-footprint-generator
 connector Wuerth WR-WTB vertical
@@ -49489,6 +49496,34 @@ connector Wuerth WR-WTB vertical
 0
 10
 10
+Connector_Yource
+1.25-3A
+
+
+0
+3
+1
+Connector_Yource
+1.25-3AT
+
+
+0
+5
+4
+Connector_Yource
+1.25-5A
+
+
+0
+0
+0
+Connector_Yource
+1.25-5AT
+
+
+0
+7
+6
 Converter_ACDC
 Converter_ACDC_CUI_PBO-3-Sxx_THT_Vertical
 ACDC-Converter, 3W, CUI PBO-3, THT https://www.cui.com/product/resource/pbo-3.pdf

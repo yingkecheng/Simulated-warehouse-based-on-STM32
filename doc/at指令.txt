@@ -1,0 +1,8 @@
+AT+RST
+AT+CWMODE=3
+AT+CWJAP="Deadline Driven","ykc2662350117"
+AT+MQTTUSERCFG=0,1,"NULL","dev_1&a1n97WMOcWB","6e007fb9789cf6cbf1f0a33ab4a17a34d778788601b03da03d6abbac0fca37a4",0,0,""
+AT+MQTTCLIENTID=0,"a1n97WMOcWB.dev_1|securemode=2\,signmethod=hmacsha256\,timestamp=1683679787004|"
+AT+MQTTCONN=0,"a1n97WMOcWB.iot-as-mqtt.cn-shanghai.aliyuncs.com",1883,1
+AT+MQTTSUB=0,"/a1n97WMOcWB/dev_1/user/get",1
+AT+MQTTPUB=0,"/a1n97WMOcWB/dev_1/user/update","xxxxxx",1,0
