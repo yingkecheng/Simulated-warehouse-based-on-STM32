@@ -1,5 +1,5 @@
 firmware\uart_printf.o: ..\Core\Src\uart_printf.c
-firmware\uart_printf.o: D:\Dev_Tools\Keil_v5_MDK\ARM\ARM_Compiler_5.06u7\Bin\..\include\stdio.h
+firmware\uart_printf.o: D:\Dev_Tools\Keil_v5_Arm\ARM\ARM_Compiler_5.06u7\Bin\..\include\stdio.h
 firmware\uart_printf.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h
 firmware\uart_printf.o: ../Core/Inc/stm32f1xx_hal_conf.h
 firmware\uart_printf.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h
@@ -7,14 +7,14 @@ firmware\uart_printf.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h
 firmware\uart_printf.o: ../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h
 firmware\uart_printf.o: ../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h
 firmware\uart_printf.o: ../Drivers/CMSIS/Include/core_cm3.h
-firmware\uart_printf.o: D:\Dev_Tools\Keil_v5_MDK\ARM\ARM_Compiler_5.06u7\Bin\..\include\stdint.h
+firmware\uart_printf.o: D:\Dev_Tools\Keil_v5_Arm\ARM\ARM_Compiler_5.06u7\Bin\..\include\stdint.h
 firmware\uart_printf.o: ../Drivers/CMSIS/Include/cmsis_version.h
 firmware\uart_printf.o: ../Drivers/CMSIS/Include/cmsis_compiler.h
 firmware\uart_printf.o: ../Drivers/CMSIS/Include/cmsis_armcc.h
 firmware\uart_printf.o: ../Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h
 firmware\uart_printf.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h
 firmware\uart_printf.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h
-firmware\uart_printf.o: D:\Dev_Tools\Keil_v5_MDK\ARM\ARM_Compiler_5.06u7\Bin\..\include\stddef.h
+firmware\uart_printf.o: D:\Dev_Tools\Keil_v5_Arm\ARM\ARM_Compiler_5.06u7\Bin\..\include\stddef.h
 firmware\uart_printf.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h
 firmware\uart_printf.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h
 firmware\uart_printf.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h

@@ -6,14 +6,14 @@ firmware\esp8266_at.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h
 firmware\esp8266_at.o: ../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h
 firmware\esp8266_at.o: ../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h
 firmware\esp8266_at.o: ../Drivers/CMSIS/Include/core_cm3.h
-firmware\esp8266_at.o: D:\Dev_Tools\Keil_v5_MDK\ARM\ARM_Compiler_5.06u7\Bin\..\include\stdint.h
+firmware\esp8266_at.o: D:\Dev_Tools\Keil_v5_Arm\ARM\ARM_Compiler_5.06u7\Bin\..\include\stdint.h
 firmware\esp8266_at.o: ../Drivers/CMSIS/Include/cmsis_version.h
 firmware\esp8266_at.o: ../Drivers/CMSIS/Include/cmsis_compiler.h
 firmware\esp8266_at.o: ../Drivers/CMSIS/Include/cmsis_armcc.h
 firmware\esp8266_at.o: ../Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h
 firmware\esp8266_at.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h
 firmware\esp8266_at.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h
-firmware\esp8266_at.o: D:\Dev_Tools\Keil_v5_MDK\ARM\ARM_Compiler_5.06u7\Bin\..\include\stddef.h
+firmware\esp8266_at.o: D:\Dev_Tools\Keil_v5_Arm\ARM\ARM_Compiler_5.06u7\Bin\..\include\stddef.h
 firmware\esp8266_at.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h
 firmware\esp8266_at.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h
 firmware\esp8266_at.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h
@@ -37,6 +37,6 @@ firmware\esp8266_at.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/portab
 firmware\esp8266_at.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h
 firmware\esp8266_at.o: ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3/portmacro.h
 firmware\esp8266_at.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrappers.h
-firmware\esp8266_at.o: D:\Dev_Tools\Keil_v5_MDK\ARM\ARM_Compiler_5.06u7\Bin\..\include\stdio.h
-firmware\esp8266_at.o: D:\Dev_Tools\Keil_v5_MDK\ARM\ARM_Compiler_5.06u7\Bin\..\include\string.h
+firmware\esp8266_at.o: D:\Dev_Tools\Keil_v5_Arm\ARM\ARM_Compiler_5.06u7\Bin\..\include\stdio.h
+firmware\esp8266_at.o: D:\Dev_Tools\Keil_v5_Arm\ARM\ARM_Compiler_5.06u7\Bin\..\include\string.h
 firmware\esp8266_at.o: ../Core/Inc/esp8266_at.h

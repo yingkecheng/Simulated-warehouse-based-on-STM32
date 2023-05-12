@@ -19,14 +19,25 @@
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
 #include "cmsis_os.h"
+
+#include "esp8266_at.h"
+#include "sensor.h"
+
 #include <stdio.h>
+#include <stdlib.h>
 
-extern HAL_StatusTypeDef AHT20_Init(I2C_HandleTypeDef *hi2c);
-extern HAL_StatusTypeDef AHT20_Get_Temp_Humidity(I2C_HandleTypeDef *hi2c, float* temperature, float* humidity);
-float t;
-float h;
+extern osThreadId_t recv_task_handle;
+extern osSemaphoreId_t recv_sem;
+extern uint8_t rx_data[128];
+extern void recv_task(void *argument);
+extern struct esp8266_at my_handle;
 
-/* Private variables ---------------------------------------------------------*/
+float temperature;
+float humidity;
+uint16_t light_intensity;
+uint16_t co2_ppm;
+uint16_t tvoc_mgm3;
+
 I2C_HandleTypeDef hi2c2;
 
 UART_HandleTypeDef huart1;
@@ -36,7 +47,12 @@ UART_HandleTypeDef huart2;
 osThreadId_t defaultTaskHandle;
 const osThreadAttr_t defaultTask_attributes = {
   .name = "defaultTask",
-  .stack_size = 128 * 4,
+  .stack_size = 128,
+  .priority = (osPriority_t) osPriorityNormal,
+};
+const osThreadAttr_t recv_task_attr = {
+  .name = "recv_task_attr",
+  .stack_size = 256,
   .priority = (osPriority_t) osPriorityNormal,
 };
 /* USER CODE BEGIN PV */
@@ -92,32 +108,19 @@ int main(void)
   MX_USART2_UART_Init();
   MX_I2C2_Init();
   /* USER CODE BEGIN 2 */
-
+	HAL_UARTEx_ReceiveToIdle_IT(&huart2, rx_data, 128);
+	// HAL_UARTEx_ReceiveToIdle_IT(&huart1, usr_data, 128);
   /* USER CODE END 2 */
 
   /* Init scheduler */
   osKernelInitialize();
 
-  /* USER CODE BEGIN RTOS_MUTEX */
-  /* add mutexes, ... */
-  /* USER CODE END RTOS_MUTEX */
-
-  /* USER CODE BEGIN RTOS_SEMAPHORES */
-  /* add semaphores, ... */
-  /* USER CODE END RTOS_SEMAPHORES */
-
-  /* USER CODE BEGIN RTOS_TIMERS */
-  /* start timers, add new ones, ... */
-  /* USER CODE END RTOS_TIMERS */
-
-  /* USER CODE BEGIN RTOS_QUEUES */
-  /* add queues, ... */
-  /* USER CODE END RTOS_QUEUES */
+  recv_sem = osSemaphoreNew(1, 0, NULL);
 
   /* Create the thread(s) */
   /* creation of defaultTask */
   defaultTaskHandle = osThreadNew(StartDefaultTask, NULL, &defaultTask_attributes);
-
+	recv_task_handle = osThreadNew(recv_task, NULL, &recv_task_attr);
   /* USER CODE BEGIN RTOS_THREADS */
   /* add threads, ... */
   /* USER CODE END RTOS_THREADS */
@@ -279,11 +282,6 @@ static void MX_USART2_UART_Init(void)
 
 }
 
-/**
-  * @brief GPIO Initialization Function
-  * @param None
-  * @retval None
-  */
 static void MX_GPIO_Init(void)
 {
   GPIO_InitTypeDef GPIO_InitStruct = {0};
@@ -319,6 +317,12 @@ static void MX_GPIO_Init(void)
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
   HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
 
+  /*Configure GPIO pins : KEY2_Pin KEY1_Pin KEY0_Pin */
+  GPIO_InitStruct.Pin = KEY2_Pin|KEY1_Pin|KEY0_Pin;
+  GPIO_InitStruct.Mode = GPIO_MODE_INPUT;
+  GPIO_InitStruct.Pull = GPIO_PULLUP;
+  HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
+
   /*Configure GPIO pins : C_EN_Pin B_SLP_Pin B_EN_Pin */
   GPIO_InitStruct.Pin = C_EN_Pin|B_SLP_Pin|B_EN_Pin;
   GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
@@ -343,17 +347,31 @@ static void MX_GPIO_Init(void)
 /* USER CODE END Header_StartDefaultTask */
 void StartDefaultTask(void *argument)
 {
-  /* USER CODE BEGIN 5 */
-  /* Infinite loop */
-  HAL_StatusTypeDef stat;
   osDelay(1000);
-  stat = AHT20_Init(&hi2c2);
-  printf("[LOG_MSG]: stat: %d\r\n", stat); 
+	esp8266_at_init();
+	my_handle.config(&my_handle);
+	AHT20_Init(&hi2c2);
+	BH1750_Init(&hi2c2);
   for(;;)
   {
-	AHT20_Get_Temp_Humidity(&hi2c2, &t, &h);
-	  printf("[LOG_MSG]: t: %f, h: %f\r\n", t, h); 
-    osDelay(1000);
+		osDelay(3000);
+		
+    AHT20_GetData(&hi2c2, &temperature, &humidity);
+		printf("Temperature: %.2f C\n", temperature);
+		printf("Humidity: %.2f C\n", humidity);
+		
+		
+		BH1750_Start(&hi2c2);
+		osDelay(180);
+		light_intensity = BH1750_Read(&hi2c2);
+		printf("Light Intensity: %d lx\n", light_intensity);
+		
+		
+		co2_ppm = rand() % 100 + 650;
+		printf("CO2 Concentration: %d ppm\n", co2_ppm);
+		
+		tvoc_mgm3 = rand() % 100 + 250;
+		printf("TVOC Concentration: %.3f mg/m3\n", tvoc_mgm3 * 1.0f / 1000);
   }
   /* USER CODE END 5 */
 }

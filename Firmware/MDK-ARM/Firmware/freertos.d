@@ -1,7 +1,7 @@
 firmware\freertos.o: ../Core/Src/freertos.c
 firmware\freertos.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h
-firmware\freertos.o: D:\Dev_Tools\Keil_v5_MDK\ARM\ARM_Compiler_5.06u7\Bin\..\include\stddef.h
-firmware\freertos.o: D:\Dev_Tools\Keil_v5_MDK\ARM\ARM_Compiler_5.06u7\Bin\..\include\stdint.h
+firmware\freertos.o: D:\Dev_Tools\Keil_v5_Arm\ARM\ARM_Compiler_5.06u7\Bin\..\include\stddef.h
+firmware\freertos.o: D:\Dev_Tools\Keil_v5_Arm\ARM\ARM_Compiler_5.06u7\Bin\..\include\stdint.h
 firmware\freertos.o: ../Core/Inc/FreeRTOSConfig.h
 firmware\freertos.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h
 firmware\freertos.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h

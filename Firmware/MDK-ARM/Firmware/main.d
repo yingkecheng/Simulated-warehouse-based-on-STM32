@@ -7,14 +7,14 @@ firmware\main.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h
 firmware\main.o: ../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h
 firmware\main.o: ../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h
 firmware\main.o: ../Drivers/CMSIS/Include/core_cm3.h
-firmware\main.o: D:\Dev_Tools\Keil_v5_MDK\ARM\ARM_Compiler_5.06u7\Bin\..\include\stdint.h
+firmware\main.o: D:\Dev_Tools\Keil_v5_Arm\ARM\ARM_Compiler_5.06u7\Bin\..\include\stdint.h
 firmware\main.o: ../Drivers/CMSIS/Include/cmsis_version.h
 firmware\main.o: ../Drivers/CMSIS/Include/cmsis_compiler.h
 firmware\main.o: ../Drivers/CMSIS/Include/cmsis_armcc.h
 firmware\main.o: ../Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h
 firmware\main.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h
 firmware\main.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h
-firmware\main.o: D:\Dev_Tools\Keil_v5_MDK\ARM\ARM_Compiler_5.06u7\Bin\..\include\stddef.h
+firmware\main.o: D:\Dev_Tools\Keil_v5_Arm\ARM\ARM_Compiler_5.06u7\Bin\..\include\stddef.h
 firmware\main.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h
 firmware\main.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h
 firmware\main.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h
@@ -38,4 +38,7 @@ firmware\main.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h
 firmware\main.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h
 firmware\main.o: ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3/portmacro.h
 firmware\main.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrappers.h
-firmware\main.o: D:\Dev_Tools\Keil_v5_MDK\ARM\ARM_Compiler_5.06u7\Bin\..\include\stdio.h
+firmware\main.o: ../Core/Inc/esp8266_at.h
+firmware\main.o: ../Core/Inc/sensor.h
+firmware\main.o: D:\Dev_Tools\Keil_v5_Arm\ARM\ARM_Compiler_5.06u7\Bin\..\include\stdio.h
+firmware\main.o: D:\Dev_Tools\Keil_v5_Arm\ARM\ARM_Compiler_5.06u7\Bin\..\include\stdlib.h

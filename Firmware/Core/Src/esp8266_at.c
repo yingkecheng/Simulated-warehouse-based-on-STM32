@@ -10,15 +10,11 @@
 
 extern UART_HandleTypeDef huart2;
 
-uint8_t usr_data[RX_BUFFER_SIZE];
 uint8_t rx_data[RX_BUFFER_SIZE];
 uint16_t rx_len;
-uint16_t usr_len;
 
 osThreadId_t recv_task_handle;
-osThreadId_t usr_task_handle;
 osSemaphoreId_t recv_sem;
-osSemaphoreId_t usr_sem;
 
 struct esp8266_at my_handle;
 
@@ -35,12 +31,16 @@ int esp8266_at_init(void)
 
 static int esp8266_at_config(esp8266_at_t handle)
 {
+	const char *at_rst_cmd = "AT+RST\r\n";
 	const char *at_cwmode_cmd = "AT+CWMODE=3\r\n";
-	const char *at_cwjap_cmd = "AT+CWJAP=\"Deadline Driven\",\"ykc2662350117\"\r\n";
+	const char *at_cwjap_cmd = "AT+CWJAP=\"watt\",\"12345678\"\r\n";
 	const char *at_cfg_cmd = "AT+MQTTUSERCFG=0,1,\"NULL\",\"dev_1&a1n97WMOcWB\",\"6e007fb9789cf6cbf1f0a33ab4a17a34d778788601b03da03d6abbac0fca37a4\",0,0,\"\"\r\n";
 	const char *at_client_cmd = "AT+MQTTCLIENTID=0,\"a1n97WMOcWB.dev_1|securemode=2\\,signmethod=hmacsha256\\,timestamp=1683679787004|\"\r\n";
 	const char *at_conn_cmd = "AT+MQTTCONN=0,\"a1n97WMOcWB.iot-as-mqtt.cn-shanghai.aliyuncs.com\",1883,1\r\n";
 	const char *at_sub_cmd = "AT+MQTTSUB=0,\"/a1n97WMOcWB/dev_1/user/get\",1\r\n";
+	
+	HAL_UART_Transmit(&huart2, (uint8_t *)at_rst_cmd, strlen(at_rst_cmd), HAL_MAX_DELAY);
+	osDelay(1000);
 	
 	HAL_UART_Transmit(&huart2, (uint8_t *)at_cwmode_cmd, strlen(at_cwmode_cmd), HAL_MAX_DELAY);
 	wait_to_ok();
@@ -66,18 +66,13 @@ static int esp8266_at_config(esp8266_at_t handle)
 	wait_to_ok();
 	handle->is_ok = 0;
 	
+	handle->is_rdy = 1;
+	
 	return 0;
 }
 
 void HAL_UARTEx_RxEventCallback(UART_HandleTypeDef *huart, uint16_t Size)
 {
-	if (huart->Instance == USART1)
-	{
-		usr_len = Size;
-		osSemaphoreRelease(usr_sem);
-		HAL_UARTEx_ReceiveToIdle_IT(huart, usr_data, RX_BUFFER_SIZE);
-	}
-	
 	if (huart->Instance == USART2)
 	{
 		rx_len = Size;
@@ -97,14 +92,6 @@ void recv_task(void *argument)
 	}
 }
 
-void usr_task(void *argument)
-{
-	while (1)
-	{
-		osSemaphoreAcquire(usr_sem, osWaitForever);
-		HAL_UART_Transmit(&huart2, usr_data, usr_len, HAL_MAX_DELAY);
-	}
-}
 
 static void rx_data_proc(void)
 {
@@ -117,11 +104,13 @@ static void rx_data_proc(void)
 		printf("[LOG_MSG]: is_ok\r\n");
 	}
 	
+	/*
 	if (get_line)
 	{
 		sscanf(rx_data, "+MQTTSUBRECV:0,\"/a1n97WMOcWB/dev_1/user/get\",%d,%d", &len, &code);
 		printf("[LOG_MSG]: len: %d, code: %d\r\n", len, code);
 	}
+	*/
 }
 
 static void wait_to_ok(void)

@@ -29,6 +29,15 @@
 
 /* Private typedef -----------------------------------------------------------*/
 /* USER CODE BEGIN PTD */
+void motor_toggle(void)
+{
+	static unsigned char stat = 1;
+	HAL_GPIO_WritePin(A_SLP_GPIO_Port, A_SLP_Pin, stat);
+	HAL_GPIO_WritePin(A_EN_GPIO_Port, A_EN_Pin, stat);
+	HAL_GPIO_WritePin(A_PH_GPIO_Port, A_PH_Pin, GPIO_PIN_SET);
+	stat ^= 1;
+}
+
 
 /* USER CODE END PTD */
 
@@ -81,7 +90,40 @@ void vApplicationTickHook( void )
    code must not attempt to block, and only the interrupt safe FreeRTOS API
    functions can be used (those that end in FromISR()). */
 	static int count = 0;
+	static unsigned char old_key0 = 1;
+	static unsigned char old_key1 = 1;
+	static unsigned char old_key2 = 1;
+	unsigned char new_key0;
+	unsigned char new_key1;
+	unsigned char new_key2;
+	
 	count++;
+	
+	if ((count % 10) == 0)
+	{
+		new_key0 = HAL_GPIO_ReadPin(KEY0_GPIO_Port, KEY0_Pin);
+		new_key1 = HAL_GPIO_ReadPin(KEY1_GPIO_Port, KEY1_Pin);
+		new_key2 = HAL_GPIO_ReadPin(KEY2_GPIO_Port, KEY2_Pin);
+		
+		if (old_key0 && !new_key0)
+		{
+			motor_toggle();
+		}
+		
+		if (old_key1 && !new_key1)
+		{
+			motor_toggle();
+		}
+		
+		if (old_key2 && !new_key2)
+		{
+			motor_toggle();
+		}
+		
+		old_key0 = new_key0;
+		old_key1 = new_key1;
+		old_key2 = new_key2;
+	}
 	
 	if ((count % 1000) == 0)
 	{
